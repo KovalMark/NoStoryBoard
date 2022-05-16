@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "appleIcon-removebg-preview.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
