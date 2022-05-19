@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF0C79422831738E00BA1C82 /* iPhoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C79412831738E00BA1C82 /* iPhoneTableViewController.swift */; };
 		BF0C7944283173C800BA1C82 /* iPadCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C7943283173C800BA1C82 /* iPadCollectionViewController.swift */; };
+		BF1B3505283660B00073CB3B /* AllButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1B3504283660B00073CB3B /* AllButtonController.swift */; };
 		BF89BE9F283122F3002FD838 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BE9E283122F3002FD838 /* AppDelegate.swift */; };
 		BF89BEA1283122F3002FD838 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BEA0283122F3002FD838 /* SceneDelegate.swift */; };
 		BF89BEA8283122F5002FD838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF89BEA7283122F5002FD838 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		BF0C79412831738E00BA1C82 /* iPhoneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneTableViewController.swift; sourceTree = "<group>"; };
 		BF0C7943283173C800BA1C82 /* iPadCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadCollectionViewController.swift; sourceTree = "<group>"; };
+		BF1B3504283660B00073CB3B /* AllButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllButtonController.swift; sourceTree = "<group>"; };
 		BF89BE9B283122F3002FD838 /* NoStoryBoard1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoStoryBoard1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF89BE9E283122F3002FD838 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF89BEA0283122F3002FD838 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,13 +59,38 @@
 		BF0C79462831741800BA1C82 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BF1B35092836615E0073CB3B /* Start */,
+				BF1B350A2836616D0073CB3B /* Tesla */,
+				BF1B350B2836617F0073CB3B /* AllButton */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BF1B35092836615E0073CB3B /* Start */ = {
+			isa = PBXGroup;
+			children = (
 				BF89BEB2283126C4002FD838 /* StartController.swift */,
 				BF89BEB4283136FA002FD838 /* TabBarController.swift */,
 				BF0C79412831738E00BA1C82 /* iPhoneTableViewController.swift */,
 				BF0C7943283173C800BA1C82 /* iPadCollectionViewController.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		BF1B350A2836616D0073CB3B /* Tesla */ = {
+			isa = PBXGroup;
+			children = (
 				BFB7479028323C48006A4744 /* TeslaController.swift */,
 			);
-			path = Controllers;
+			path = Tesla;
+			sourceTree = "<group>";
+		};
+		BF1B350B2836617F0073CB3B /* AllButton */ = {
+			isa = PBXGroup;
+			children = (
+				BF1B3504283660B00073CB3B /* AllButtonController.swift */,
+			);
+			path = AllButton;
 			sourceTree = "<group>";
 		};
 		BF89BE92283122F3002FD838 = {
@@ -167,6 +194,7 @@
 				BF0C7944283173C800BA1C82 /* iPadCollectionViewController.swift in Sources */,
 				BF89BEA1283122F3002FD838 /* SceneDelegate.swift in Sources */,
 				BF89BEB3283126C4002FD838 /* StartController.swift in Sources */,
+				BF1B3505283660B00073CB3B /* AllButtonController.swift in Sources */,
 				BFB7479128323C48006A4744 /* TeslaController.swift in Sources */,
 				BF0C79422831738E00BA1C82 /* iPhoneTableViewController.swift in Sources */,
 			);

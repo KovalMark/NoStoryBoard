@@ -1,6 +1,6 @@
 # NoStoryBoard
 
-Верстка кодом, без использования StoryBoard
+Layout by code, without using StoryBoard
 
 ### StartController
 + ![loadScreen](https://github.com/KovalMark/ScreenshotApp/blob/master/NSB/StartController.png)

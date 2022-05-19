@@ -21,7 +21,7 @@ final class TeslaController: UIViewController {
     private let scrollView: UIScrollView = {
         
         let scroll = UIScrollView()
-        scroll.backgroundColor = #colorLiteral(red: 0.9564248919, green: 0.9365862608, blue: 0.8980651498, alpha: 1)
+        scroll.backgroundColor = #colorLiteral(red: 0.8347052932, green: 0.6351812482, blue: 0.5606315136, alpha: 1)
         scroll.translatesAutoresizingMaskIntoConstraints = false
         
         return scroll
@@ -42,8 +42,8 @@ final class TeslaController: UIViewController {
         
         let label = UILabel()
         label.text = "Kamal and Grant arrived. “Hi Kamal!” said Tara. “Are you going to the Halloween disco tomorrow?” “Yes. Hi Amy,” Kamal said, smiling. “Do you want to come and see our paintings after school?” “I’m coming too!” Tara insisted. :)"
-        // изменим кол-во строк, чтобы влез наш текст (0 значит, что кол-во строк не ограничено)
         
+        // изменим кол-во строк, чтобы влез наш текст (0 значит, что кол-во строк не ограничено)
         label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = #colorLiteral(red: 0.1641006172, green: 0.1443990767, blue: 0.1230163649, alpha: 1)

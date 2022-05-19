@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         //        говорим какой экран у нас будет запускаться первый
-        window?.rootViewController = StartController()
+        window?.rootViewController = AllButtonController()
         //        показ нашей сцены, то на чем мы будем работать
         window?.makeKeyAndVisible()
     }
