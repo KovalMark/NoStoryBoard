@@ -9,7 +9,9 @@ import UIKit
 
 final class StartController: UIViewController {
     
-//MARK: Для запуска этого экрана в SceneDelegate нужно указать StartController
+    //MARK: Для запуска этого экрана в SceneDelegate нужно указать StartController
+    
+    //  Удаляем сториборд из упоминания при запуске и из ифноЛиста!!!!
     
     override func viewDidLoad() {
         super.viewDidLoad()
