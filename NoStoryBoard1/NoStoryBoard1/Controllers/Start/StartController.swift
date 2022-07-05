@@ -77,7 +77,7 @@ final class StartController: UIViewController {
         button.layer.cornerRadius = 10
         button.setTitle("Apple", for: .normal)
         // вызываем какое-то действие для нашей кнопки. Вызываем саму себя, выбираем селектор для действия при нажатии на кнопку (for)
-        button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
+        button.addTarget(StartController.self, action: #selector(tapButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button

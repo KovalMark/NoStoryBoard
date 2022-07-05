@@ -8,7 +8,6 @@
 import UIKit
 
 // MARK: AllButtonController
-
 class AllButtonController: UIViewController {
     
     override func viewDidLoad() {
@@ -17,8 +16,7 @@ class AllButtonController: UIViewController {
         setupConstraints()
     }
     
-    // MARK: Views
-    
+    // MARK: scrollView
     private let scrollView: UIScrollView = {
         
         let scroll = UIScrollView()
@@ -28,6 +26,7 @@ class AllButtonController: UIViewController {
         return scroll
     }()
     
+    // MARK: tableButton
     private let tableButton: UIButton = {
         
         let image = UIImage(systemName: "table")
@@ -37,11 +36,18 @@ class AllButtonController: UIViewController {
         button.tintColor = #colorLiteral(red: 0.2237454355, green: 0.2437752783, blue: 0.3576468825, alpha: 1)
         button.setTitle("TableView", for: .normal)
         button.layer.cornerRadius = 70
+        button.addTarget(self, action: #selector(pressTableButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
     }()
     
+    @objc func pressTableButton() {
+        let tableController = TableViewController()
+        navigationController?.pushViewController(tableController, animated: true)
+    }
+    
+    // MARK: collectionButton
     private let collectionButton: UIButton = {
         
         let image = UIImage(systemName: "photo.fill.on.rectangle.fill")
@@ -51,11 +57,18 @@ class AllButtonController: UIViewController {
         button.tintColor = #colorLiteral(red: 0.4865377545, green: 0.4129810333, blue: 0.4957652688, alpha: 1)
         button.setTitle("CollectionView", for: .normal)
         button.layer.cornerRadius = 70
+        button.addTarget(self, action: #selector(pressCollectionButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
     }()
     
+    @objc func pressCollectionButton() {
+        let collectionController = CollectionViewController()
+        navigationController?.pushViewController(collectionController, animated: true)
+    }
+    
+    // MARK: tabBarButton
     private let tabBarButton: UIButton = {
         
         let image = UIImage(systemName: "sidebar.left")
@@ -70,6 +83,7 @@ class AllButtonController: UIViewController {
         return button
     }()
     
+    // MARK: viewButton
     private let viewButton: UIButton = {
         
         let image = UIImage(systemName: "viewfinder.circle.fill")
@@ -83,9 +97,8 @@ class AllButtonController: UIViewController {
         
         return button
     }()
-    
+
     // MARK: Setup Views
-    
     private func setupViews() {
         view.addSubview(scrollView)
         
@@ -97,7 +110,6 @@ class AllButtonController: UIViewController {
 }
 
 // MARK: Extension for constraint
-
 extension AllButtonController {
     private func setupConstraints() {
         NSLayoutConstraint.activate([
@@ -108,21 +120,21 @@ extension AllButtonController {
         ])
         
         NSLayoutConstraint.activate([
-            tableButton.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 250),
+            tableButton.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 125),
             tableButton.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 25),
             tableButton.heightAnchor.constraint(equalToConstant: 150),
             tableButton.widthAnchor.constraint(equalToConstant: 150)
         ])
         
         NSLayoutConstraint.activate([
-            collectionButton.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 250),
+            collectionButton.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 125),
             collectionButton.leftAnchor.constraint(equalTo: tableButton.rightAnchor, constant: 65),
             collectionButton.heightAnchor.constraint(equalToConstant: 150),
             collectionButton.widthAnchor.constraint(equalToConstant: 150)
         ])
         
         NSLayoutConstraint.activate([
-            tabBarButton.topAnchor.constraint(equalTo: tableButton.bottomAnchor, constant: 150),
+            tabBarButton.topAnchor.constraint(equalTo: tableButton.bottomAnchor, constant: 200),
             tabBarButton.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 25),
             tabBarButton.heightAnchor.constraint(equalToConstant: 150),
             tabBarButton.widthAnchor.constraint(equalToConstant: 150),
@@ -130,7 +142,7 @@ extension AllButtonController {
         ])
         
         NSLayoutConstraint.activate([
-            viewButton.topAnchor.constraint(equalTo: collectionButton.bottomAnchor, constant: 150),
+            viewButton.topAnchor.constraint(equalTo: collectionButton.bottomAnchor, constant: 200),
             viewButton.leftAnchor.constraint(equalTo: tabBarButton.rightAnchor, constant: 65),
             viewButton.heightAnchor.constraint(equalToConstant: 150),
             viewButton.widthAnchor.constraint(equalToConstant: 150),

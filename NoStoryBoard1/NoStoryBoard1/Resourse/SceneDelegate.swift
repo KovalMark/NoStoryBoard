@@ -11,20 +11,54 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    
+    // MARK: подключаем NavigationsController к созданному ViewController
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
-        //        MARK: удаляем storyboard из main interface и из файла info
-        //        создаем переменную windowScene и говорим что window будем открываться в нашей сцене
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: windowScene)
-        //        говорим какой экран у нас будет запускаться первый
-        window?.rootViewController = AllButtonController()
-        //        показ нашей сцены, то на чем мы будем работать
-        window?.makeKeyAndVisible()
+        if let ws = scene as? UIWindowScene {
+            
+            let myWindow = UIWindow(windowScene: ws)
+            let navController = UINavigationController()
+            let vc = AllButtonController()
+            
+            navController.viewControllers = [vc]
+            myWindow.rootViewController = navController
+            
+            self.window = myWindow
+            myWindow.makeKeyAndVisible()
+        }
+
+        
+        /*
+         MARK: Запуск из кода AllButtonController()
+
+         // создаем переменную windowScene и говорим что window будем открываться в нашей сцене
+         guard let windowScene = (scene as? UIWindowScene) else { return }
+         window = UIWindow(windowScene: windowScene)
+         // говорим какой экран у нас будет запускаться первый
+         window?.rootViewController = AllButtonController()
+         // показ нашей сцены, то на чем мы будем работать
+         window?.makeKeyAndVisible()
+         
+         */
+        
+        /*
+         MARK: подключаем NavigationsController к созданному ViewController
+
+         guard let windowScene = (scene as? UIWindowScene) else { return }
+         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+         window?.windowScene = windowScene
+
+         let navigationController = UINavigationController()
+         window?.rootViewController = navigationController
+
+         let mainViewController = AllButtonController()
+         navigationController.pushViewController(mainViewController, animated: true)
+
+         window?.makeKeyAndVisible()
+         guard let _ = (scene as? UIWindowScene) else { return }
+         
+         */
+        
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
