@@ -29,6 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         
         /*
+         
          MARK: Запуск из кода AllButtonController()
 
          // создаем переменную windowScene и говорим что window будем открываться в нашей сцене
@@ -40,25 +41,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
          window?.makeKeyAndVisible()
          
          */
-        
-        /*
-         MARK: подключаем NavigationsController к созданному ViewController
-
-         guard let windowScene = (scene as? UIWindowScene) else { return }
-         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-         window?.windowScene = windowScene
-
-         let navigationController = UINavigationController()
-         window?.rootViewController = navigationController
-
-         let mainViewController = AllButtonController()
-         navigationController.pushViewController(mainViewController, animated: true)
-
-         window?.makeKeyAndVisible()
-         guard let _ = (scene as? UIWindowScene) else { return }
-         
-         */
-        
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
