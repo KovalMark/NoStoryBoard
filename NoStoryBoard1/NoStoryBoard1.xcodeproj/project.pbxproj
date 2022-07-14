@@ -10,7 +10,7 @@
 		BF0C79422831738E00BA1C82 /* iPhoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C79412831738E00BA1C82 /* iPhoneTableViewController.swift */; };
 		BF0C7944283173C800BA1C82 /* iPadCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C7943283173C800BA1C82 /* iPadCollectionViewController.swift */; };
 		BF1B3505283660B00073CB3B /* AllButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1B3504283660B00073CB3B /* AllButtonController.swift */; };
-		BF3D21722874240D000FB6B9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D21712874240D000FB6B9 /* TableViewController.swift */; };
+		BF3D21722874240D000FB6B9 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D21712874240D000FB6B9 /* CityViewController.swift */; };
 		BF3D21742874259E000FB6B9 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D21732874259E000FB6B9 /* CollectionViewController.swift */; };
 		BF89BE9F283122F3002FD838 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BE9E283122F3002FD838 /* AppDelegate.swift */; };
 		BF89BEA1283122F3002FD838 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BEA0283122F3002FD838 /* SceneDelegate.swift */; };
@@ -19,13 +19,17 @@
 		BF89BEB3283126C4002FD838 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BEB2283126C4002FD838 /* StartController.swift */; };
 		BF89BEB5283136FA002FD838 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89BEB4283136FA002FD838 /* TabBarController.swift */; };
 		BFB7479128323C48006A4744 /* TeslaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7479028323C48006A4744 /* TeslaController.swift */; };
+		BFD992B2287C11B9002FE4D4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD992B1287C11B9002FE4D4 /* TabBarViewController.swift */; };
+		BFD992B4287C11C6002FE4D4 /* BusinessCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD992B3287C11C6002FE4D4 /* BusinessCardController.swift */; };
+		BFD992B6287C574A002FE4D4 /* extensions+customNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD992B5287C574A002FE4D4 /* extensions+customNavigationBar.swift */; };
+		BFDAE8D9288019E6008DED52 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDAE8D8288019E6008DED52 /* CityModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF0C79412831738E00BA1C82 /* iPhoneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneTableViewController.swift; sourceTree = "<group>"; };
 		BF0C7943283173C800BA1C82 /* iPadCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadCollectionViewController.swift; sourceTree = "<group>"; };
 		BF1B3504283660B00073CB3B /* AllButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllButtonController.swift; sourceTree = "<group>"; };
-		BF3D21712874240D000FB6B9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BF3D21712874240D000FB6B9 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		BF3D21732874259E000FB6B9 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		BF89BE9B283122F3002FD838 /* NoStoryBoard1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoStoryBoard1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF89BE9E283122F3002FD838 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		BF89BEB2283126C4002FD838 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
 		BF89BEB4283136FA002FD838 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BFB7479028323C48006A4744 /* TeslaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaController.swift; sourceTree = "<group>"; };
+		BFD992B1287C11B9002FE4D4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		BFD992B3287C11C6002FE4D4 /* BusinessCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardController.swift; sourceTree = "<group>"; };
+		BFD992B5287C574A002FE4D4 /* extensions+customNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extensions+customNavigationBar.swift"; sourceTree = "<group>"; };
+		BFDAE8D8288019E6008DED52 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +71,9 @@
 		BF0C79462831741800BA1C82 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF1B35092836615E0073CB3B /* Start */,
-				BF1B350A2836616D0073CB3B /* Tesla */,
 				BF1B350B2836617F0073CB3B /* AllButton */,
+				BFD992B7287C57A0002FE4D4 /* Extensions */,
+				BFD992B8287C57B2002FE4D4 /* Old Controllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -93,8 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				BF1B3504283660B00073CB3B /* AllButtonController.swift */,
-				BF3D21712874240D000FB6B9 /* TableViewController.swift */,
+				BFDAE8DA28801D5B008DED52 /* City's Table */,
 				BF3D21732874259E000FB6B9 /* CollectionViewController.swift */,
+				BFD992B1287C11B9002FE4D4 /* TabBarViewController.swift */,
+				BFDAE8DB28801D86008DED52 /* Business Card */,
 			);
 			path = AllButton;
 			sourceTree = "<group>";
@@ -123,6 +133,40 @@
 				BF89BEAC283122F5002FD838 /* Info.plist */,
 			);
 			path = NoStoryBoard1;
+			sourceTree = "<group>";
+		};
+		BFD992B7287C57A0002FE4D4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BFD992B5287C574A002FE4D4 /* extensions+customNavigationBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFD992B8287C57B2002FE4D4 /* Old Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF1B35092836615E0073CB3B /* Start */,
+				BF1B350A2836616D0073CB3B /* Tesla */,
+			);
+			path = "Old Controllers";
+			sourceTree = "<group>";
+		};
+		BFDAE8DA28801D5B008DED52 /* City's Table */ = {
+			isa = PBXGroup;
+			children = (
+				BF3D21712874240D000FB6B9 /* CityViewController.swift */,
+				BFDAE8D8288019E6008DED52 /* CityModel.swift */,
+			);
+			path = "City's Table";
+			sourceTree = "<group>";
+		};
+		BFDAE8DB28801D86008DED52 /* Business Card */ = {
+			isa = PBXGroup;
+			children = (
+				BFD992B3287C11C6002FE4D4 /* BusinessCardController.swift */,
+			);
+			path = "Business Card";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,13 +241,17 @@
 			files = (
 				BF89BE9F283122F3002FD838 /* AppDelegate.swift in Sources */,
 				BF89BEB5283136FA002FD838 /* TabBarController.swift in Sources */,
+				BFD992B2287C11B9002FE4D4 /* TabBarViewController.swift in Sources */,
 				BF0C7944283173C800BA1C82 /* iPadCollectionViewController.swift in Sources */,
 				BF89BEA1283122F3002FD838 /* SceneDelegate.swift in Sources */,
 				BF3D21742874259E000FB6B9 /* CollectionViewController.swift in Sources */,
+				BFDAE8D9288019E6008DED52 /* CityModel.swift in Sources */,
+				BFD992B4287C11C6002FE4D4 /* BusinessCardController.swift in Sources */,
 				BF89BEB3283126C4002FD838 /* StartController.swift in Sources */,
 				BF1B3505283660B00073CB3B /* AllButtonController.swift in Sources */,
 				BFB7479128323C48006A4744 /* TeslaController.swift in Sources */,
-				BF3D21722874240D000FB6B9 /* TableViewController.swift in Sources */,
+				BF3D21722874240D000FB6B9 /* CityViewController.swift in Sources */,
+				BFD992B6287C574A002FE4D4 /* extensions+customNavigationBar.swift in Sources */,
 				BF0C79422831738E00BA1C82 /* iPhoneTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +396,7 @@
 				INFOPLIST_FILE = NoStoryBoard1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,6 +424,7 @@
 				INFOPLIST_FILE = NoStoryBoard1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
