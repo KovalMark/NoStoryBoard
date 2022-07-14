@@ -3,6 +3,8 @@
 ## NoStoryBoard app
 ### AllButtonController
 + ![loadScreen](https://github.com/KovalMark/ScreenshotApp/blob/master/NSB/AllButtonController.png)
+### CityController
++ ![loadScreen](https://github.com/KovalMark/ScreenshotApp/blob/master/NSB/CityController.png)
 ### BusinessCardController
 + ![loadScreen](https://github.com/KovalMark/ScreenshotApp/blob/master/NSB/BusinessCardController.png)
 
