@@ -45,7 +45,7 @@ class AllButtonController: UIViewController {
         button.setImage(image, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.8514456749, green: 0.5804716349, blue: 0.3252245784, alpha: 1)
         button.tintColor = #colorLiteral(red: 0.2237454355, green: 0.2437752783, blue: 0.3576468825, alpha: 1)
-        button.setTitle("TableView", for: .normal)
+        button.setTitle("City's Table", for: .normal)
         button.layer.cornerRadius = 70
         button.addTarget(self, action: #selector(pressTableButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -54,7 +54,7 @@ class AllButtonController: UIViewController {
     }()
     
     @objc func pressTableButton() {
-        let tableController = TableViewController()
+        let tableController = CityViewController()
         navigationController?.pushViewController(tableController, animated: true)
     }
     
@@ -108,7 +108,7 @@ class AllButtonController: UIViewController {
         button.setImage(image, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.4865377545, green: 0.4129810333, blue: 0.4957652688, alpha: 1)
         button.tintColor = #colorLiteral(red: 0.7627497315, green: 0.4687284231, blue: 0.396117419, alpha: 1)
-        button.setTitle("View", for: .normal)
+        button.setTitle("Business Card", for: .normal)
         button.layer.cornerRadius = 70
         button.addTarget(self, action: #selector(pressViewButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
