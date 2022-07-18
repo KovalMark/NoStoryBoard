@@ -5,7 +5,7 @@
 + ![loadScreen](https://github.com/KovalMark/ScreenshotApp/blob/master/NSB/AllButtonController.png)
 ### CityController
 + ![loadScreen](https://github.com/KovalMark/ScreenshotApp/blob/master/NSB/CityController.png)
-### BusinessCardController
+### SNPCardController
 + ![loadScreen](https://github.com/KovalMark/ScreenshotApp/blob/master/NSB/BusinessCardController.png)
 
 #### StartController

@@ -41,10 +41,11 @@ class AllButtonController: UIViewController {
     private let tableButton: UIButton = {
         
         let image = UIImage(systemName: "table")
-        let button = UIButton(type: .custom)
+        let button = UIButton(type: .system)
         button.setImage(image, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.8514456749, green: 0.5804716349, blue: 0.3252245784, alpha: 1)
         button.tintColor = #colorLiteral(red: 0.2237454355, green: 0.2437752783, blue: 0.3576468825, alpha: 1)
+        button.setTitleColor( .white, for: .normal)
         button.setTitle("City's Table", for: .normal)
         button.layer.cornerRadius = 70
         button.addTarget(self, action: #selector(pressTableButton), for: .touchUpInside)
@@ -62,10 +63,11 @@ class AllButtonController: UIViewController {
     private let collectionButton: UIButton = {
         
         let image = UIImage(systemName: "photo.fill.on.rectangle.fill")
-        let button = UIButton(type: .custom)
+        let button = UIButton(type: .system)
         button.setImage(image, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.7627497315, green: 0.4687284231, blue: 0.396117419, alpha: 1)
         button.tintColor = #colorLiteral(red: 0.4865377545, green: 0.4129810333, blue: 0.4957652688, alpha: 1)
+        button.setTitleColor( .white, for: .normal)
         button.setTitle("CollectionView", for: .normal)
         button.layer.cornerRadius = 70
         button.addTarget(self, action: #selector(pressCollectionButton), for: .touchUpInside)
@@ -83,10 +85,11 @@ class AllButtonController: UIViewController {
     private let tabBarButton: UIButton = {
         
         let image = UIImage(systemName: "sidebar.left")
-        let button = UIButton(type: .custom)
+        let button = UIButton(type: .system)
         button.setImage(image, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.2237454355, green: 0.2437752783, blue: 0.3576468825, alpha: 1)
         button.tintColor = #colorLiteral(red: 0.8514456749, green: 0.5804716349, blue: 0.3252245784, alpha: 1)
+        button.setTitleColor( .white, for: .normal)
         button.setTitle("TabBarView", for: .normal)
         button.layer.cornerRadius = 70
         button.addTarget(self, action: #selector(pressTabBarButton), for: .touchUpInside)
@@ -104,10 +107,11 @@ class AllButtonController: UIViewController {
     private let viewButton: UIButton = {
         
         let image = UIImage(systemName: "viewfinder.circle.fill")
-        let button = UIButton(type: .custom)
+        let button = UIButton(type: .system)
         button.setImage(image, for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.4865377545, green: 0.4129810333, blue: 0.4957652688, alpha: 1)
         button.tintColor = #colorLiteral(red: 0.7627497315, green: 0.4687284231, blue: 0.396117419, alpha: 1)
+        button.setTitleColor( .white, for: .normal)
         button.setTitle("Business Card", for: .normal)
         button.layer.cornerRadius = 70
         button.addTarget(self, action: #selector(pressViewButton), for: .touchUpInside)
@@ -117,7 +121,7 @@ class AllButtonController: UIViewController {
     }()
     
     @objc func pressViewButton() {
-        let viewController = BusinessCardController()
+        let viewController = SNPCardController()
         navigationController?.pushViewController(viewController, animated: true)
     }
     
